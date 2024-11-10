@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+ background: linear-gradient(
+   90deg,
+   rgba(241, 92, 34, 1) 0%,
+   rgba(247, 147, 29, 1) 50%,
+   rgba(255, 200, 64, 1) 100%
+ );
+ color: #fff;
+}
+
+p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/* Slider Arrows */
+.slider-arrow {
+    background-color: #262861;
+    border: 1px solid #262861;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .primary-button {
+    display: flex;
+    column-gap: 10px;
+    color: #262861;
+    background-color: #ffc840;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 32px;
+    line-height: 18px;
+    border-radius: 34px;
+    border-style: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    margin-top: auto;
+  }
+  
