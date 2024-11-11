@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Development Exercise</title>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
     <script src="app.js"></script>
     <link href="./output.css" rel="stylesheet" />
     <link
-    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css">
   </head>
   <body>
-    <div class="container mx-auto px-4 py-16">
+    <div class="container mx-auto px-4 py-16 content-wrapper">
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
         <!-- Text content on the left -->
-        <div class="md:w-1/2">
-                 <!--Slider Navigation Buttons-->
-       <div class="button-wrapper mb-6">
-        <button class="slider-arrow" id="btnPrev">
-          <svg
-            class="w-[32px] h-[32px]"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            stroke-width="1"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path stroke="currentColor" d="M5 12h14M5 12l4-4m-4 4 4 4" />
-          </svg>
-        </button>
-        <button class="slider-arrow" id="btnNext">
-          <svg
-            class="w-[32px] h-[32px]"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            stroke-width="1"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path stroke="currentColor" d="M19 12H5m14 0-4 4m4-4-4-4" />
-          </svg>
-        </button>
-      </div>
+        <div class="md:w-1/2 content-container">
+          <!--Slider Navigation Buttons-->
+          <div class="button-wrapper mb-6">
+            <button class="slider-arrow" id="btnPrev">
+              <svg
+                class="w-[32px] h-[32px]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                stroke-width="1"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="currentColor" d="M5 12h14M5 12l4-4m-4 4 4 4" />
+              </svg>
+            </button>
+            <button class="slider-arrow" id="btnNext">
+              <svg
+                class="w-[32px] h-[32px]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                stroke-width="1"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="currentColor" d="M19 12H5m14 0-4 4m4-4-4-4" />
+              </svg>
+            </button>
+          </div>
           <h1 class="text-4xl font-bold mb-4">The Roberts Family Story</h1>
           <p class="mb-6">
             The circumstances surrounding the Roberts family are both unique and
@@ -74,9 +76,9 @@
             </svg>
           </button>
         </div>
-    
+
         <!-- Carousel on the right -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 carousel-wrapper">
           <section class="splide" id="video-slider" aria-label="Carousel">
             <!-- Splide structure -->
             <div class="splide__track">
@@ -88,7 +90,7 @@
                 </li>
                 <li class="splide__slide">
                   <div class="video-image">
-                    <img src="maxresdefault.png" alt="" />
+                    <img src="maxresdefault.jpeg" alt="" />
                   </div>
                 </li>
               </ul>
@@ -99,6 +101,3 @@
     </div>
   </body>
 </html>
-
-
-
